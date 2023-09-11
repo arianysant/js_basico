@@ -8,3 +8,6 @@ https://arianysant.github.io/js_basico/funcoes/funcoes.html
 
 ## atividade IMC :
 https://arianysant.github.io/js_basico/atividade_imc/imc.html
+
+## atividade 03 :
+https://arianysant.github.io/js_basico/aula_03/aula03.html
