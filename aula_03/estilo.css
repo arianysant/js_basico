@@ -26,6 +26,7 @@ h1{
 }
 
 .form{
+    text-align: center;
     align-items: center;
     position: absolute;
     display: flex;
