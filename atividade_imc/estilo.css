@@ -45,3 +45,25 @@ h2{
     font-weight: bold;
     font-size: 18px;
 }
+
+.imc-grave {
+    color: #FF0000; 
+}
+
+.imc-moderado{
+    color: #5eff00; 
+}
+
+.imc-baixograve {
+    color: #ff9100; 
+}
+
+
+.imc-baixo {
+    color: #00eeff; 
+}
+
+
+.imc-médio {
+    color: #11f368; 
+}
