@@ -2,16 +2,16 @@ const person = {
 
     firstName: "",
     lastName: "",
-    language: "",
-    setDetails(firstName, lastName, language) {
+    idade: "",
+    setDetails(firstName, lastName, idade) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.language = language;
+        this.idade = idade;
     },
     displayDetails() {
         document.getElementById("displayFirstName").textContent = this.firstName;
         document.getElementById("displayLastName").textContent = this.lastName;
-        document.getElementById("displayLanguage").textContent = this.language;
+        document.getElementById("displayidade").textContent = this.idade;
     }
 };
 
@@ -22,9 +22,9 @@ form.addEventListener("submit", function (e) {
 
     const firstName = document.getElementById("firstName").value;
     const lastName = document.getElementById("lastName").value;
-    const language = document.getElementById("language").value;
+    const idade = document.getElementById("idade").value;
 
-    person.setDetails(firstName, lastName, language);
+    person.setDetails(firstName, lastName, idade);
     person.displayDetails();
 
     // document.getElementById("firstName").value = "";
