@@ -15,7 +15,7 @@ https://arianysant.github.io/js_basico/aula_03/aula03.html
 ## Tabuada :
 https://arianysant.github.io/js_basico/tabuada/index.html
 
-## Obj Orientados :
+## Obj Orientados / Sem laço :
 https://arianysant.github.io/js_basico/Objetos_orientados/index.html
 
 
