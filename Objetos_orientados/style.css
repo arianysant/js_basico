@@ -14,7 +14,7 @@ img{
 }
 
 #personForm {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
 }
 
@@ -75,7 +75,8 @@ body{
 .title{
     background-color:#0e2bd3e5;
     color: #ffffff;
-    padding-left: 39%;
+    padding-left: 33%;
+   
 }
 
 
