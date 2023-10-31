@@ -3,6 +3,7 @@ img{
     vertical-align: middle;
 }
 
+
 .container {
     max-width: 600px;
     margin: 0 auto;
@@ -53,8 +54,6 @@ p{
 
 .display-details {
     margin-top: 20px;
-    border-style: solid;
-    color: #0e2bd3e5;
 }
 
 
