@@ -18,5 +18,6 @@ https://arianysant.github.io/js_basico/tabuada/index.html
 ## Obj Orientados / Sem laço :
 https://arianysant.github.io/js_basico/Objetos_orientados/index.html
 
-
+## Obj Orientados / Com laço :
+https://arianysant.github.io/js_basico/objetos/index.html
 
