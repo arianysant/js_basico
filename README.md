@@ -21,3 +21,6 @@ https://arianysant.github.io/js_basico/Objetos_orientados/index.html
 ## Obj Orientados / Com laço :
 https://arianysant.github.io/js_basico/objetos/index.html
 
+## Troca Imagens / CR7:
+https://arianysant.github.io/js_basico/troca_imagens/index.html
+
