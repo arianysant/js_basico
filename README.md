@@ -24,3 +24,6 @@ https://arianysant.github.io/js_basico/objetos/index.html
 ## Troca Imagens / CR7:
 https://arianysant.github.io/js_basico/troca_imagens/index.html
 
+## Regex / CR7:
+https://arianysant.github.io/js_basico/regex/index.html
+
