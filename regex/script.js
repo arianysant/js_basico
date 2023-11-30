@@ -21,18 +21,18 @@ function validarFormulario() {
         return false;
     }
 
-    if (email === "") {
-        alert("Por favor, preencha o campo Email.");
+    if (email === "" || validarEmail(email) ) {
+        alert("Por favor, preencha o campo Email assim '@seunome'.");
         return false;
     }
 
-    if (!validarEmail(email)) {
-        alert("Email inválido. Por favor, insira um email válido.");
-        return false;
-    }
+    //  if (!validarEmail(email)) {
+    //      alert("Email inválido. Por favor, insira um email válido.");
+    //     return false;
+    //  }
 
     if (dataNascimento === "" || !validardata(dataNascimento)) {
-        alert("Por favor, preencha o campo Data de Nascimento.");
+        alert("Por favor, preencha o campo data de nascimento.");
         return false;
     }
     
@@ -50,7 +50,10 @@ function validarFormulario() {
     return true;
 }
 
+
+
 function validarEmail(email) {
+    // Verifica se o email está no formato correto
     const re = /\S+@\S+\.\S+/;
     return re.test(email);
 }
@@ -71,18 +74,27 @@ function validarTelefone(telefone) {
     return /^\(\d{2}\)\d{5}-\d{4}$/.test(telefone);
 }
 
-const revealElements = document.querySelectorAll("[data-reveal]");
+function redirecionar() {
+    if (validarFormulario()) {
 
-const scrollReveal = function(){
-    for(let i = 0; i < revealElements.length; i++){
-            const isElementsOnScreen = revealElements[i].getBoundingClientRect().top < window.innerHeight;
-        if(isElementsOnScreen){
-            revealElements[i].classList.add("revealed");
-        }else{
-            revealElements[i].classList.remove("revealed");
-        }
+        // se o formulário for válido, leva para outra página.
+
+        window.location.href = 'index.html';
     }
 }
 
-window.addEventListener("scroll", scrollReveal);
-window.addEventListener("load", scrollReveal);
+
+
+// Botão de audio
+
+ document.getElementById('playAudio').addEventListener('click', function() {
+   var audio = document.getElementById('audio');
+
+   if (audio.paused) {
+       audio.play();
+   } else {
+       audio.pause();
+        audio.currentTime = 0;     }
+ });
+
+
