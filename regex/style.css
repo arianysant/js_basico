@@ -399,3 +399,60 @@ header .navegation li a{
     align-items: center;
 }
 
+
+
+/* card */
+
+.containercard {
+    margin: 50px;
+    width: 990px; /* largura do card */
+    height: 300px; /*altura do card */
+    perspective: 800px;
+  }
+  
+  .containercard:hover > .card {
+    cursor: pointer;
+    transform: rotateY(180deg);
+  }
+  
+  .card {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1888ms;
+    transform-style: preserve-3d;
+  }
+  
+  .frente, .atras {
+    background: url(img/jquery1.png);
+    background-size: cover;   /* 450px 450px;  tamanho da imagem  dentro do card */
+    background-position:center ;
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.25); /* sombra da borda do card */
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  
+  .frente {
+    background-image: url(img/jquery.png);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .atras {
+    background-color: #3a3a3a;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .containercard h4{
+    text-align: center;
+    margin-top: 18px;
+    color: #ffffff;
+  }

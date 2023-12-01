@@ -10,11 +10,17 @@ $(document).ready(function () {
 });
 
 function validarFormulario() {
-    const nome = $("#nome").val();
-    const email = $("#email").val();
-    const dataNascimento = $("#dataNascimento").val();
-    const telefone = $("#telefone").val();
-    const cpf = $("#cpf").val();
+
+const nome = $("#nome").val();
+
+const email = $("#email").val();
+
+const dataNascimento = $("#dataNascimento").val();
+
+const telefone = $("#telefone").val();
+
+const cpf = $("#cpf").val();
+
 
     if (nome === "") {
         alert("Por favor, preencha o campo Nome.");
