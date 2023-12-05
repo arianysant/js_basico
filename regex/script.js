@@ -30,7 +30,7 @@ const cpf = $("#cpf").val();
     // Não está funcionando a parte escrita dps do @..
 
     if (email === "" || validarEmail(email) ) {
-        alert("Por favor, preencha o campo Email assim '@seunome'.");
+        alert("Por favor, preencha o campo Email assim 'fulano@fulano'.");
         return false;
     }
 
@@ -62,7 +62,9 @@ const cpf = $("#cpf").val();
 
 function validarEmail(email) {
     // Verifica se o email está no formato correto
-    const re = /\S+@\S+\.\S+/;
+
+    // Mudei a expressão regular.
+    const re = /@([a-zA-Z0-9_.+-]+)\.[a-zA-Z0-9_.+-]$/;
     return re.test(email);
 }
 
@@ -82,14 +84,28 @@ function validarTelefone(telefone) {
     return /^\(\d{2}\)\d{5}-\d{4}$/.test(telefone);
 }
 
-function redirecionar() {
+// function redirecionar() {
+//     if (validarFormulario()) {
+
+//         // se o formulário for válido, leva para outra página.
+
+//         window.location.href = 'index.html';
+//     }
+// }
+
+ 
+
+$("#enviar").on("click", function (event){
+    //impede o envio padrão do formulário 
+    event.preventDefault();
+
     if (validarFormulario()) {
 
         // se o formulário for válido, leva para outra página.
 
-        window.location.href = 'index.html';
+        window.location.href = "regex.html";
     }
-}
+})
 
 
 // Botão de audio cr7
