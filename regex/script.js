@@ -27,6 +27,8 @@ const cpf = $("#cpf").val();
         return false;
     }
 
+    // Não está funcionando a parte escrita dps do @..
+
     if (email === "" || validarEmail(email) ) {
         alert("Por favor, preencha o campo Email assim '@seunome'.");
         return false;
@@ -90,8 +92,7 @@ function redirecionar() {
 }
 
 
-
-// Botão de audio
+// Botão de audio cr7
 
  document.getElementById('playAudio').addEventListener('click', function() {
    var audio = document.getElementById('audio');

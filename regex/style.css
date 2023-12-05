@@ -13,6 +13,8 @@
     .wrapper {
         width: 100%;
         height: auto;
+        box-shadow: none;
+        border-radius: 0;
     }
 
     h2 {
@@ -21,6 +23,7 @@
 
     .input-group {
         width: 100%;
+        margin: 15px 0;
     }
 
     .input-group input {
@@ -58,7 +61,36 @@
     .content .text a {
         margin-top: 20px;
     }
+
+    .containercard {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .card {
+        height: 100px; /* Ajuste conforme necessário */
+    }
+
+    .frente,
+    .atras {
+        border-radius: 1rem;
+    }
+
+    .containercardre {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .cardre {
+        height: 100px; /* Ajuste conforme necessário */
+    }
+
+    .frentere,
+    .atrasre {
+        border-radius: 1rem;
+    }
 }
+
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
@@ -301,9 +333,7 @@ header .navegation li a{
 .content{
     position: relative;
     width: 100%;
-    display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 .content .text{
     position: relative;
@@ -401,7 +431,7 @@ header .navegation li a{
 
 
 
-/* card */
+/* card pag jquery */
 
 .containercard {
     margin: 50px;
@@ -456,3 +486,63 @@ header .navegation li a{
     margin-top: 18px;
     color: #ffffff;
   }
+
+  /* card pag regex */
+
+.containercardre {
+    margin: 50px;
+    width: 990px; /* largura do card */
+    height: 300px; /*altura do card */
+    perspective: 800px;
+  }
+  
+  .containercardre:hover > .cardre {
+    cursor: pointer;
+    transform: rotateY(180deg);
+  }
+  
+  .cardre {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1888ms;
+    transform-style: preserve-3d;
+  }
+  
+  .frentere, .atrasre {
+    background: url(img/regexample.png) ;
+    background-size:cover; 
+    background-position:center ;
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.25); /* sombra da borda do card */
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  
+  .frentere {
+    background-image: url(img/codRegEx.png) ;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .atrasre {
+    background-color: #3a3a3a;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .containercardre h4{
+    text-align: center;
+    margin-top: 18px;
+    color: #ffffff;
+  }
+
+
+
+  
