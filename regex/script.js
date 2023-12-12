@@ -103,7 +103,7 @@ $("#enviar").on("click", function (event){
 
         // se o formulário for válido, leva para outra página.
 
-        window.location.href = "regex.html";
+        window.location.href = "index.html";
     }
 })
 
